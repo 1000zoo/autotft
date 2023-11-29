@@ -1,5 +1,6 @@
 package com.zoo.autotft.domain.synergy;
 
+import com.zoo.autotft.domain.Champion;
 import java.util.List;
 import lombok.Getter;
 
@@ -19,5 +20,12 @@ public abstract class Synergy {
         if (this.champions == null) {
             this.champions = champions;
         }
+    }
+
+    public boolean containsChampion(Champion champion) {
+        if (champions == null) {
+            return false;
+        }
+        return champions.stream().anyMatch(championSynergy -> champion.equals(championSynergy.champion()));
     }
 }
