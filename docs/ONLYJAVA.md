@@ -6,9 +6,10 @@
     - [X] Synergy 정보를 기록 및 반환
 - [X] Champion Repository
     - [X] Champion 정보를 기록 및 반환
-- [ ] JsonRepositoryController
-    - [ ] Synergy와 Champion 간의 연결관계를 설정
-    - [ ] Synergy load, Champion load
+- [X] JsonRepositoryController
+    - [X] Synergy와 Champion 간의 연결관계를 설정
+    - [X] Synergy load, Champion load
+        - 각 repository를 반환하여 구현
 
 ### Domain
 
