@@ -67,4 +67,8 @@ public class ChampionJsonRepository implements JsonRepository<Champion> {
     public List<Champion> findAllList() {
         return new ArrayList<>(repository.values());
     }
+
+    public List<String> findSynergiesByName(String name) {
+        return synergiesNameMap.get(name);
+    }
 }

@@ -28,7 +28,7 @@ class ChampionJsonRepositoryTest {
         Champion champion = repository.findByName(name);
 
         // when
-        String resultName = champion.name();
+        String resultName = champion.getName();
 
         // then
         assertThat(resultName).isEqualTo(name);

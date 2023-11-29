@@ -59,6 +59,7 @@ public class SynergyJsonRepository implements JsonRepository<Synergy> {
     @Override
     public Synergy findByName(String name) {
         if (!repository.containsKey(name)) {
+            System.out.println(name);
             throw new IllegalArgumentException("[Error] json 파일 손상");
         }
         return repository.get(name);
