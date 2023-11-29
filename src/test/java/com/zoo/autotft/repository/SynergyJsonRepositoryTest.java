@@ -20,7 +20,7 @@ class SynergyJsonRepositoryTest {
 
     @ParameterizedTest
     @DisplayName("시너지 이름으로 엔티티를 불러온다.")
-    @ValueSource(strings = {"컨트리", "Heartsteel"})
+    @ValueSource(strings = {"컨트리", "Heartsteel", "감시자"})
     void findByNameTest(String name) {
         // given
         Synergy synergy = repository.findByName(name);
