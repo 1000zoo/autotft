@@ -6,7 +6,18 @@ import lombok.Getter;
 @Getter
 public abstract class Synergy {
 
-    protected String name;
-    protected ActivateConditions conditions;
-    protected List<ChampionSynergy> champions;
+    protected final String name;
+    protected final ActivateConditions conditions;
+    protected List<ChampionSynergy> champions = null;
+
+    protected Synergy(String name, ActivateConditions conditions) {
+        this.name = name;
+        this.conditions = conditions;
+    }
+
+    public void setChampions(List<ChampionSynergy> champions) {
+        if (this.champions == null) {
+            this.champions = champions;
+        }
+    }
 }
