@@ -1,5 +1,6 @@
 package com.zoo.autotft.repository;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 import com.zoo.autotft.domain.Champion;
@@ -50,7 +51,7 @@ class JsonRepositoryControllerTest {
     }
 
     @ParameterizedTest
-    @DisplayName("기물 이름으로 시너지 목록 불러오기")
+    @DisplayName("기물이 시너지와 잘 연결되었는 지 테스트")
     @MethodSource("getChampionTestArguments")
     void championRepositoryTest(String championName, Synergy synergy, boolean answer) {
         //given
@@ -60,8 +61,6 @@ class JsonRepositoryControllerTest {
         boolean result = champion.containsSynergy(synergy);
 
         //then
-//        assertThat(result).isEqualTo(answer);
-        System.out.println(champion.getName());
-        System.out.println(champion.getSynergies());
+        assertThat(result).isEqualTo(answer);
     }
 }
