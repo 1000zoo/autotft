@@ -2,8 +2,8 @@
 
 > Json 파일로 부터 데이터를 불러와서 Entity를 생성한다.
 
-- [ ] Synergies Repository
-    - [ ] Synergy 정보를 기록 및 반환
+- [X] Synergies Repository
+    - [X] Synergy 정보를 기록 및 반환
 - [ ] Champion Repository
     - [ ] Champion 정보를 기록 및 반환
 
