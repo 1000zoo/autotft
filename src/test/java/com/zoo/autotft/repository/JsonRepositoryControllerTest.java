@@ -1,7 +1,6 @@
 package com.zoo.autotft.repository;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 import com.zoo.autotft.domain.Champion;
 import com.zoo.autotft.domain.synergy.ActivateConditions;
@@ -9,29 +8,14 @@ import com.zoo.autotft.domain.synergy.Class;
 import com.zoo.autotft.domain.synergy.Origin;
 import com.zoo.autotft.domain.synergy.Synergy;
 import java.util.Collections;
-import java.util.stream.Stream;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.CsvSource;
 
 class JsonRepositoryControllerTest {
 
     private final static ActivateConditions empty = new ActivateConditions(Collections.emptyList());
-
-    private static Stream<Arguments> getChampionTestArguments() {
-        return Stream.of(
-                arguments("진", getSynergyClass("거물"), true),
-                arguments("진", getSynergyOrigin("마에스트로"), true),
-                arguments("진", getSynergyClass("마에스트로"), false),
-                arguments("진", getSynergyOrigin("난동꾼"), false),
-                arguments("세트", getSynergyClass("난동꾼"), true),
-                arguments("세트", getSynergyClass("춤꾼"), true),
-                arguments("세트", getSynergyOrigin("Heartsteel"), true),
-                arguments("세트", getSynergyOrigin("처형자"), false)
-        );
-    }
 
     private static Synergy getSynergyClass(String name) {
         return new Class(name, empty);
@@ -51,16 +35,27 @@ class JsonRepositoryControllerTest {
     }
 
     @ParameterizedTest
-    @DisplayName("기물이 시너지와 잘 연결되었는 지 테스트")
-    @MethodSource("getChampionTestArguments")
-    void championRepositoryTest(String championName, Synergy synergy, boolean answer) {
+    @DisplayName("기물과 시너지가 잘 연결되었는 지 테스트")
+    @CsvSource(value = {
+            "진,거물,true",
+            "진,마에스트로,true",
+            "진,난동꾼,false",
+            "세트,난동꾼,true",
+            "세트,춤꾼,true",
+            "세트,Heartsteel,true",
+            "세트,마에스트로,false",
+    })
+    void championRepositoryTest(String championName, String synergyName, boolean answer) {
         //given
         Champion champion = championRepository.findByName(championName);
+        Synergy synergy = synergyRepository.findByName(synergyName);
 
         //when
-        boolean result = champion.containsSynergy(synergy);
+        boolean championContainsSynergy = champion.containsSynergy(synergy);
+        boolean synergyContainsChampion = synergy.containsChampion(champion);
 
         //then
-        assertThat(result).isEqualTo(answer);
+        assertThat(championContainsSynergy).isEqualTo(answer);
+        assertThat(synergyContainsChampion).isEqualTo(answer);
     }
 }
