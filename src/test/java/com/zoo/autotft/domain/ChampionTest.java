@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.stream.Stream;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -47,5 +48,14 @@ class ChampionTest {
         boolean result = champion.containsSynergy(synergy);
 
         assertThat(result).isEqualTo(answer);
+    }
+
+    @Test
+    @DisplayName("관계가 설정되기 전 테스트")
+    void beforeLink() {
+        Champion champion = new Champion("진", 5);
+        Synergy synergy = new Class("거물", empty);
+
+        assertThat(champion.containsSynergy(synergy)).isEqualTo(false);
     }
 }
