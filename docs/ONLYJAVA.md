@@ -4,8 +4,11 @@
 
 - [X] Synergies Repository
     - [X] Synergy 정보를 기록 및 반환
-- [ ] Champion Repository
-    - [ ] Champion 정보를 기록 및 반환
+- [X] Champion Repository
+    - [X] Champion 정보를 기록 및 반환
+- [ ] JsonRepositoryController
+    - [ ] Synergy와 Champion 간의 연결관계를 설정
+    - [ ] Synergy load, Champion load
 
 ### Domain
 

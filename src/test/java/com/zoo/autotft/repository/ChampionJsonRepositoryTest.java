@@ -22,7 +22,7 @@ class ChampionJsonRepositoryTest {
 
     @ParameterizedTest
     @DisplayName("시너지의 이름을 통해, 챔피언 정보를 불러온다.")
-    @ValueSource(strings = {"나미", "트위스티드페이트"})
+    @ValueSource(strings = {"나미", "트위스티드 페이트"})
     void findByNameTest(String name) {
         // given
         Champion champion = repository.findByName(name);
@@ -36,7 +36,7 @@ class ChampionJsonRepositoryTest {
 
     @ParameterizedTest
     @DisplayName("없는 기물이 들어올 경우, 에러가 발생한다.")
-    @ValueSource(strings = {"", " ", "트위스티드 페이트"})
+    @ValueSource(strings = {"", " ", "트위스티드페이트"})
     void throwIfInvalidName(String name) {
         assertThrows(
                 IllegalArgumentException.class,
