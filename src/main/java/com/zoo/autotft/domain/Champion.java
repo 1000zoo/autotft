@@ -1,9 +1,12 @@
 package com.zoo.autotft.domain;
 
 import com.zoo.autotft.domain.synergy.ChampionSynergy;
+import com.zoo.autotft.domain.synergy.Synergy;
 import java.util.List;
 import java.util.Objects;
+import lombok.Getter;
 
+@Getter
 public final class Champion {
 
     private final String name;
@@ -15,44 +18,33 @@ public final class Champion {
         this.cost = cost;
     }
 
-    public String name() {
-        return name;
-    }
-
-    public int cost() {
-        return cost;
-    }
-
     public void setSynergies(List<ChampionSynergy> synergies) {
-        if (this.synergies != null) {
+        if (this.synergies == null) {
             this.synergies = synergies;
         }
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (obj == null || obj.getClass() != this.getClass()) {
+    public boolean containsSynergy(Synergy synergy) {
+        if (synergies == null) {
             return false;
         }
-        var that = (Champion) obj;
-        return Objects.equals(this.name, that.name) &&
-                this.cost == that.cost &&
-                Objects.equals(this.synergies, that.synergies);
+        return synergies.stream().anyMatch(championSynergy -> synergy.equals(championSynergy.synergy()));
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Champion champion = (Champion) o;
+        return Objects.equals(name, champion.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, cost, synergies);
-    }
-
-    @Override
-    public String toString() {
-        return "Champion[" +
-                "name=" + name + ", " +
-                "cost=" + cost + ", " +
-                "synergies=" + synergies + ']';
+        return Objects.hash(name);
     }
 }
