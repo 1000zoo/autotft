@@ -7,5 +7,6 @@ import lombok.Getter;
 public abstract class Synergy {
 
     protected String name;
+    protected ActivateConditions conditions;
     protected List<ChampionSynergy> champions;
 }
