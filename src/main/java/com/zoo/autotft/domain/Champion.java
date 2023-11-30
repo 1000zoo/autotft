@@ -7,7 +7,7 @@ import java.util.Objects;
 import lombok.Getter;
 
 @Getter
-public final class Champion {
+public final class Champion implements Comparable<Champion> {
 
     private final String name;
     private final int cost;
@@ -46,5 +46,13 @@ public final class Champion {
     @Override
     public int hashCode() {
         return Objects.hash(name);
+    }
+
+    @Override
+    public int compareTo(Champion o) {
+        if (cost == o.cost) {
+            return name.compareTo(o.name);
+        }
+        return Integer.compare(cost, o.cost);
     }
 }
