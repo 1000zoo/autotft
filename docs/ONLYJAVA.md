@@ -15,15 +15,15 @@
 
 #### Entity
 
-- [ ] Champion
-    - [ ] equals, hashCode 필요
-- [ ] Synergy
-    - [ ] Origin
-    - [ ] Class
-    - [ ] equals, hashCode 필요
-- [ ] ActiveConditions
+- [X] Champion
+    - [X] equals, hashCode 필요
+- [X] Synergy
+    - [X] Origin
+    - [X] Class
+    - [X] equals, hashCode 필요
+- [X] ActiveConditions
     - 활성 조건을 의미하는 객체
-- [ ] ChampionSynergy
+- [X] ChampionSynergy
     - Champion과 Synergy의 다대다 관계를 풀어내는 엔티티
 
 - Entity 생성 순서

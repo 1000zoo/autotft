@@ -3,6 +3,7 @@ package com.zoo.autotft.domain.synergy;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.zoo.autotft.domain.Champion;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
@@ -14,7 +15,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 class SynergyTest {
 
     private static Synergy synergy;
-    private static ActivateConditions empty = new ActivateConditions(Collections.emptyList());
+    private static final ActivateConditions empty = new ActivateConditions(Collections.emptyList());
 
     @BeforeEach
     void setUp() {
@@ -60,5 +61,50 @@ class SynergyTest {
 
         //then
         assertThat(result).isEqualTo(false);
+    }
+
+    @Test
+    @DisplayName("equals: 같은 이름이라면, 같은 시너지이다.")
+    void equalsCaseSameName() {
+        // given
+        Synergy synergy1 = new Class("난동꾼", empty);
+        Synergy synergy2 = new Class("난동꾼", empty);
+
+        // when
+        boolean result = synergy1.equals(synergy2);
+
+        // then
+        assertThat(result).isEqualTo(true);
+    }
+
+    @Test
+    @DisplayName("equals: 같은 이름이라도, 다른 타입이라면, 다른 시너지이다.")
+    void equalsCaseDifferentType() {
+        //given
+        Synergy synergy1 = new Class("난동꾼", empty);
+        Synergy synergy2 = new Origin("난동꾼", empty);
+
+        //when
+        boolean result = synergy1.equals(synergy2);
+
+        //then
+        assertThat(result).isEqualTo(false);
+    }
+
+    @Test
+    @DisplayName("다른 레퍼런스를 가지고 있더라도, 이름이 같다면, contains로 찾을 수 있다.")
+    void containsTest() {
+        //given
+        Synergy synergy1 = new Class("난동꾼", empty);
+        Synergy synergy2 = new Class("난동꾼", empty);
+
+        List<Synergy> synergyList = new ArrayList<>();
+        synergyList.add(synergy1);
+
+        //when
+        boolean result = synergyList.contains(synergy2);
+
+        //then
+        assertThat(result).isEqualTo(true);
     }
 }

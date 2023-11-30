@@ -9,7 +9,9 @@ import com.zoo.autotft.domain.synergy.Class;
 import com.zoo.autotft.domain.synergy.Origin;
 import com.zoo.autotft.domain.synergy.Synergy;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Stream;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -57,5 +59,32 @@ class ChampionTest {
         Synergy synergy = new Class("거물", empty);
 
         assertThat(champion.containsSynergy(synergy)).isEqualTo(false);
+    }
+
+    @Test
+    @DisplayName("equals: 같은 이름을 갖고 있다면, 같은 기물이다.")
+    void equalsCaseSameReference() {
+        Champion champion1 = new Champion("진", 5);
+        Champion champion2 = new Champion("진", 5);
+        boolean result = champion1.equals(champion2);
+
+        assertThat(result).isEqualTo(true);
+    }
+
+    @Test
+    @DisplayName("기물 set 중복 테스트")
+    void duplicateChampionTest() {
+        // given
+        Champion champion1 = new Champion("나미", 1);
+        Champion champion2 = new Champion("나미", 1);
+        Set<Champion> set = new HashSet<>();
+
+        // when
+        set.add(champion1);
+        set.add(champion2);
+        int size = set.size();
+
+        // then
+        assertThat(size).isEqualTo(1);
     }
 }
