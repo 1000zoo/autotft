@@ -26,5 +26,3 @@
 - [X] ChampionSynergy
     - Champion과 Synergy의 다대다 관계를 풀어내는 엔티티
 
-- Entity 생성 순서
-    - Synergy -> ActivateConditions -> Champion -> ChampionSynergy -> Synergy.champions
