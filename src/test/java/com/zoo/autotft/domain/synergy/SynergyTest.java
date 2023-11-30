@@ -107,4 +107,21 @@ class SynergyTest {
         //then
         assertThat(result).isEqualTo(true);
     }
+
+    @Test
+    @DisplayName("시너지 활성 수 테스트")
+    void activatedStateTest() {
+        // given
+        ActivateConditions activateConditions = new ActivateConditions(
+                List.of(2, 4, 6)
+        );
+        Synergy synergy = new Class("난동꾼", activateConditions);
+        int count = 5;
+
+        // when
+        int result = synergy.getActivatedState(count);
+
+        // then
+        assertThat(result).isEqualTo(4);
+    }
 }

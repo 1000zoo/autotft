@@ -28,4 +28,8 @@ public abstract class Synergy {
         }
         return champions.stream().anyMatch(championSynergy -> champion.equals(championSynergy.champion()));
     }
+
+    public int getActivatedState(int count) {
+        return conditions.getActivatedState(count);
+    }
 }
