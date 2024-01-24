@@ -10,6 +10,7 @@ import com.zoo.autotft.domain.synergy.Synergy;
 import com.zoo.autotft.util.ConstructorInterface;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -63,5 +64,10 @@ public class SynergyJsonRepository implements JsonRepository<Synergy> {
             throw new IllegalArgumentException("[Error] json 파일 손상");
         }
         return repository.get(name);
+    }
+
+    @Override
+    public List<Synergy> getAllList() {
+        return new ArrayList<>(repository.values());
     }
 }
