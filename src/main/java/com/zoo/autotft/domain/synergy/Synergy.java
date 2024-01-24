@@ -30,6 +30,10 @@ public abstract class Synergy {
         return champions.stream().anyMatch(championSynergy -> champion.equals(championSynergy.champion()));
     }
 
+    public List<Champion> getAllChampionList() {
+        return champions.stream().map(ChampionSynergy::champion).toList();
+    }
+
     public int getActivatedState(int count) {
         return conditions.getActivatedState(count);
     }
