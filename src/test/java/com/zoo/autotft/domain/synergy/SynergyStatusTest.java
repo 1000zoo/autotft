@@ -7,7 +7,6 @@ import com.zoo.autotft.domain.Champion;
 import com.zoo.autotft.repository.ChampionJsonRepository;
 import com.zoo.autotft.repository.JsonRepositoryController;
 import com.zoo.autotft.repository.SynergyJsonRepository;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -85,7 +84,7 @@ class SynergyStatusTest {
         status.put(champion);
 
         // then
-        Assertions.assertThat(status.size()).isEqualTo(2);
+        assertThat(status.size()).isEqualTo(2);
 
     }
 }
