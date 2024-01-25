@@ -1,6 +1,7 @@
 package com.zoo.autotft.domain.synergy;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class SynergyStatus {
@@ -13,6 +14,14 @@ public class SynergyStatus {
 
     public SynergyStatus(SynergyStatus forCopy) {
         status = new HashMap<>(forCopy.status);
+    }
+
+    public static SynergyStatus of(List<Synergy> synergyList) {
+        SynergyStatus synergyStatus = new SynergyStatus();
+        for (Synergy synergy : synergyList) {
+            synergyStatus.put(synergy);
+        }
+        return synergyStatus;
     }
 
     public void put(Synergy key) {
