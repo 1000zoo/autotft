@@ -48,4 +48,11 @@ public class SynergyStatus {
         // 정확한 공식은 추후에 생각
         return 0;
     }
+
+    @Override
+    public String toString() {
+        return "SynergyStatus{" +
+                "status=" + status +
+                '}';
+    }
 }

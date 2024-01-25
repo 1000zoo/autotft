@@ -31,6 +31,10 @@ public final class Champion implements Comparable<Champion> {
         return synergies.stream().anyMatch(championSynergy -> synergy.equals(championSynergy.synergy()));
     }
 
+    public List<Synergy> getSynergies() {
+        return synergies.stream().map(ChampionSynergy::synergy).toList();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -54,5 +58,13 @@ public final class Champion implements Comparable<Champion> {
             return name.compareTo(o.name);
         }
         return Integer.compare(cost, o.cost);
+    }
+
+    @Override
+    public String toString() {
+        return "Champion{" +
+                "name='" + name + '\'' +
+                ", synergies=" + getSynergies() +
+                '}';
     }
 }

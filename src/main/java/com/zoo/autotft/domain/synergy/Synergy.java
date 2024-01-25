@@ -54,4 +54,11 @@ public abstract class Synergy {
     public int hashCode() {
         return Objects.hash(name);
     }
+
+    @Override
+    public String toString() {
+        return "Synergy{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }
