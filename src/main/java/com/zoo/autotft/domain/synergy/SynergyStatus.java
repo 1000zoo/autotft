@@ -1,5 +1,6 @@
 package com.zoo.autotft.domain.synergy;
 
+import com.zoo.autotft.domain.Champion;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,6 +27,10 @@ public class SynergyStatus {
 
     public void put(Synergy key) {
         status.put(key, status.getOrDefault(key, 0) + 1);
+    }
+
+    public void put(Champion champion) {
+        champion.getSynergies().forEach(this::put);
     }
 
     public boolean remove(Synergy key) {
