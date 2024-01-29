@@ -6,5 +6,5 @@ import com.zoo.autotft.domain.synergy.Synergy;
 import java.util.List;
 
 public interface Combinator {
-    List<Deck> combine(int maximumNumber, List<Champion> champion, List<Synergy> synergy);
+    List<Deck> combine(int maximumNumber, List<Champion> champions, List<Synergy> synergies);
 }

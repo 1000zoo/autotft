@@ -8,16 +8,17 @@ import java.util.List;
 
 public class BasicCombinator implements Combinator {
 
-    private final List<Champion> championRepository;
+    private final List<Champion> allChampions;
 
     public BasicCombinator(Repository<Champion> championRepository) {
-        this.championRepository = championRepository.getAllList();
+        this.allChampions = championRepository.getAllList();
     }
 
-    public List<Deck> combine(int maximumNumber, List<Champion> champion, List<Synergy> synergy) {
+    @Override
+    public List<Deck> combine(int maximumNumber, List<Champion> champions, List<Synergy> synergies) {
         CandidateList candidateList = new CandidateList();
-        Deck current = new Deck(maximumNumber, champion, synergy);
-        dfs(candidateList, current, championRepository, 0);
+        Deck current = new Deck(maximumNumber, champions, synergies);
+        dfs(candidateList, current, allChampions, 0);
         return candidateList.getResults();
     }
 
