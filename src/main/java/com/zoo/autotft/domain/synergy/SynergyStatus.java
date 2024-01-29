@@ -54,6 +54,9 @@ public class SynergyStatus {
     public int score() {
         int score = 0;
         for (Synergy synergy : status.keySet()) {
+            if (synergy.isUnique()) {
+                continue;
+            }
             score += synergy.isActivated(status.get(synergy)) ? 1 : 0;
         }
         return score;
