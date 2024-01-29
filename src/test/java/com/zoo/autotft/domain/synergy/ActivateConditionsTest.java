@@ -21,6 +21,15 @@ class ActivateConditionsTest {
         );
     }
 
+    private static Stream<Arguments> getArgumentsForScoreTest() {
+        return Stream.of(
+                arguments(List.of(1, 2, 3, 4), 2, 2),
+                arguments(List.of(3, 5, 7, 10), 4, 1),
+                arguments(List.of(3, 5, 7, 10), 9, 3),
+                arguments(List.of(2, 4, 6), 1, 0)
+        );
+    }
+
     @ParameterizedTest
     @DisplayName("시너지 수가 주어지면, 현재 활성화된 시너지 수를 반환한다.")
     @MethodSource("getArguments")
@@ -30,6 +39,20 @@ class ActivateConditionsTest {
 
         // when
         int actual = activateConditions.getActivatedState(count);
+
+        // then
+        assertThat(actual).isEqualTo(answer);
+    }
+
+    @ParameterizedTest
+    @DisplayName("시너지 수가 주어지면, 현재 활성화된 시너지의 점수를 반환한다.")
+    @MethodSource("getArgumentsForScoreTest")
+    void scoreTest(List<Integer> conditions, int count, int answer) {
+        // given
+        ActivateConditions activateConditions = new ActivateConditions(conditions);
+
+        // when
+        int actual = activateConditions.getActivatedScore(count);
 
         // then
         assertThat(actual).isEqualTo(answer);
