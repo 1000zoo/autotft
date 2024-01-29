@@ -45,7 +45,7 @@ public class Deck {
     }
 
     public int value() {
-        return 0;
+        return status.score();
     }
 
     public boolean isFull() {
