@@ -73,6 +73,15 @@ public class SynergyStatus {
 
     @Override
     public String toString() {
-        return status.toString();
+        StringBuilder sb = new StringBuilder("{");
+        List<Synergy> list = status.keySet().stream()
+                .sorted((s1, s2) -> s1.compareTo(s2) != 0 ? s1.compareTo(s2) : status.get(s2) - status.get(s1))
+                .toList();
+
+        for (Synergy synergy : list) {
+            sb.append(synergy.name).append(":").append(status.get(synergy)).append(", ");
+        }
+        sb.append("}");
+        return sb.toString();
     }
 }

@@ -50,6 +50,16 @@ public abstract class Synergy {
         return getClass() == Unique.class;
     }
 
+    public int compareTo(Synergy o) {
+        if (isUnique()) {
+            return -1;
+        }
+        if (o.isUnique()) {
+            return 1;
+        }
+        return 0;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {

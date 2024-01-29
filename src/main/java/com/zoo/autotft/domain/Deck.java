@@ -72,8 +72,9 @@ public class Deck {
     @Override
     public String toString() {
         return "Deck{" +
-                "score= " + score() +
-                ", status=" + status +
-                '}';
+                "champions= " + champions +
+                ", score= " + score() +
+                ", status=" + status.toString() +
+                '}' + "\n";
     }
 }
