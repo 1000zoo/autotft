@@ -38,6 +38,10 @@ public abstract class Synergy {
         return conditions.getActivatedState(count);
     }
 
+    public int getActivatedScore(int count) {
+        return conditions.getActivatedScore(count);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {

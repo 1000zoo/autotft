@@ -49,9 +49,9 @@ public class SynergyStatus {
     }
 
     public int score() {
-        // 현재 조합의 시너지 활성 정도가 어느 정도인지 평가하는 지표
-        // 정확한 공식은 추후에 생각
-        return 0;
+        return status.keySet().stream()
+                .map(synergy -> synergy.getActivatedScore(status.get(synergy)))
+                .toList().stream().reduce(Integer::sum).orElseThrow();
     }
 
     @Override
