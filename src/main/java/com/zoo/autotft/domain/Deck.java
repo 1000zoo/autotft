@@ -60,6 +60,10 @@ public class Deck {
         return champions.size() == level;
     }
 
+    public boolean contains(Champion champion) {
+        return champions.contains(champion);
+    }
+
     @Override
     public String toString() {
         return "Deck{" +
