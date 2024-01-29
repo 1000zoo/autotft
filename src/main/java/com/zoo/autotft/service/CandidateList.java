@@ -23,4 +23,11 @@ public class CandidateList {
     public List<Deck> getResults() {
         return new ArrayList<>(candidateList);
     }
+
+    @Override
+    public String toString() {
+        return "CandidateList{" +
+                "candidateList=" + candidateList +
+                '}';
+    }
 }
