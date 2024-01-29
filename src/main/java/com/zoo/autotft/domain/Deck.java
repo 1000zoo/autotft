@@ -44,6 +44,14 @@ public class Deck {
         return champions.size();
     }
 
+    public int value() {
+        return 0;
+    }
+
+    public boolean isFull() {
+        return champions.size() == level;
+    }
+
     @Override
     public String toString() {
         return "Deck{" +
