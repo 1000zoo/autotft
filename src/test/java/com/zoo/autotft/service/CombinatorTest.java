@@ -10,7 +10,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-class BasicCombinatorTest {
+class CombinatorTest {
 
     private static Repository<Champion> championRepository;
     private static Repository<Synergy> synergyRepository;
@@ -39,5 +39,25 @@ class BasicCombinatorTest {
 //        Assertions.assertThat(combinedList.size()).isEqualTo(maximumNumber);
         System.out.println(combinedList);
 
+    }
+
+    @Test
+    @DisplayName("병렬처리 조합기 테스트")
+    void concurrentCombinatorTest() {
+        // given
+        int maximumNumber = 10;
+        List<String> championNames = List.of("나미", "타릭", "케넨", "블리츠크랭크", "직스");
+        List<String> synergyNames = List.of("디스코"); // 타릭이 헤드라이너인 상황
+        List<Champion> champions = championNames.stream().map(championRepository::findByName).toList();
+        List<Synergy> synergies = synergyNames.stream().map(synergyRepository::findByName).toList();
+
+        // when
+        Combinator basicCombinator = new ConcurrentCombinator(championRepository);
+        List<Deck> combinedList = basicCombinator.combine(maximumNumber, champions, synergies);
+
+        // then
+//        Assertions.assertThat(combinedList.size()).isEqualTo(maximumNumber);
+        System.out.println(combinedList);
+        System.out.println(combinedList.size());
     }
 }
