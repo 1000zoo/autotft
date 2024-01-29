@@ -49,9 +49,11 @@ public class SynergyStatus {
     }
 
     public int score() {
-        return status.keySet().stream()
-                .map(synergy -> synergy.getActivatedScore(status.get(synergy)))
-                .toList().stream().reduce(Integer::sum).orElseThrow();
+        int score = 0;
+        for (Synergy synergy : status.keySet()) {
+            score += synergy.getActivatedScore(status.get(synergy));
+        }
+        return score;
     }
 
     @Override
