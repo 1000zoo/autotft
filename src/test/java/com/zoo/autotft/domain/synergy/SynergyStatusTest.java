@@ -75,6 +75,23 @@ class SynergyStatusTest {
     }
 
     @Test
+    @DisplayName("remove 내부 자세히 테스트")
+    void removeDetailTest() {
+        // given
+        status.put(championRepository.findByName("타릭"));
+        status.put(championRepository.findByName("나미"));
+        status.put(championRepository.findByName("케넨"));
+        status.put(synergyRepository.findByName("디스코"));
+
+        // when
+        status.remove(synergyRepository.findByName("디스코"));
+        status.remove(synergyRepository.findByName("수호자"));
+
+        // then
+        assertThat(status.score()).isEqualTo(0);
+    }
+
+    @Test
     @DisplayName("champion put 테스트")
     void putChampionTest() {
         // given
