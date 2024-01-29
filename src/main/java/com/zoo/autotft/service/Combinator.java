@@ -11,23 +11,31 @@ public class Combinator {
     private final static int MAXIMUM_CANDIDATE_SIZE = 10;
 
     private final List<Champion> championRepository;
-    private final List<Synergy> synergyRepository;
 
-    public Combinator(Repository<Champion> championRepository, Repository<Synergy> synergyRepository) {
+    public Combinator(Repository<Champion> championRepository) {
         this.championRepository = championRepository.getAllList();
-        this.synergyRepository = synergyRepository.getAllList();
     }
 
     public List<Deck> combine(int maximumNumber, List<Champion> champion, List<Synergy> synergy) {
         CandidateList candidateList = new CandidateList();
         Deck current = new Deck(maximumNumber, champion, synergy);
-
+        dfs(candidateList, current, championRepository, 0);
         return candidateList.getResults();
     }
 
-    private void dfs(CandidateList candidateList, Deck current) {
+    private void dfs(CandidateList candidateList, Deck current, List<Champion> remainingChampions, int index) {
         if (current.isFull()) {
-            candidateList.add(current);
+            candidateList.add(new Deck(current));
+            return;
+        }
+
+        for (int i = index; i < remainingChampions.size(); i++) {
+            Champion champion = remainingChampions.get(i);
+            if (!current.contains(champion)) {
+                current.add(champion);
+                dfs(candidateList, current, remainingChampions, i + 1);
+                current.remove(champion);
+            }
         }
     }
 }

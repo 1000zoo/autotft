@@ -61,8 +61,6 @@ public abstract class Synergy {
 
     @Override
     public String toString() {
-        return "Synergy{" +
-                "name='" + name + '\'' +
-                '}';
+        return name;
     }
 }

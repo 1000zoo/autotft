@@ -75,6 +75,23 @@ class DeckTest {
 
     }
 
+    @Test
+    @DisplayName("현재 조합의 시너지와 관련된 챔피언들 목록 불러오기")
+    void getAllPossibleChampionsTest() {
+        // given
+        int level = 10;
+        List<Champion> champions = championOf(List.of("나미", "타릭", "케넨"));
+        List<Synergy> synergies = synergyOf(List.of("디스코"));
+        Deck deck = new Deck(level, champions, synergies);
+
+        // when
+        List<Champion> allPossibleChampions = deck.getAllPossibleChampions();
+
+        // then
+        System.out.println(allPossibleChampions);
+
+    }
+
     private List<Synergy> synergyOf(List<String> names) {
         return names.stream().map(synergyRepository::findByName).collect(Collectors.toList());
     }

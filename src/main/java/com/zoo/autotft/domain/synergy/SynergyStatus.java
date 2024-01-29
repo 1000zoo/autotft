@@ -1,9 +1,12 @@
 package com.zoo.autotft.domain.synergy;
 
 import com.zoo.autotft.domain.Champion;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class SynergyStatus {
 
@@ -56,10 +59,17 @@ public class SynergyStatus {
         return score;
     }
 
+    public List<Champion> getAllPossibleChampions(Set<Champion> alreadyContain) {
+        Set<Champion> set = new HashSet<>();
+        for (Synergy synergy : status.keySet()) {
+            set.addAll(synergy.getAllChampionList());
+        }
+        set.removeAll(alreadyContain);
+        return new ArrayList<>(set);
+    }
+
     @Override
     public String toString() {
-        return "SynergyStatus{" +
-                "status=" + status +
-                '}';
+        return status.toString();
     }
 }
