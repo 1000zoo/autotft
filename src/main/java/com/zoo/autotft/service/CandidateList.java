@@ -14,10 +14,10 @@ public class CandidateList {
     private final Queue<Deck> candidateList = new PriorityQueue<>(Comparator.comparingInt(Deck::value));
 
     public void add(Deck deck) {
-        if (candidateList.size() >= MAX_SIZE) {
+        candidateList.add(deck);
+        if (candidateList.size() > MAX_SIZE) {
             candidateList.poll();
         }
-        candidateList.add(deck);
     }
 
     public List<Deck> getResults() {
