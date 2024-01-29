@@ -40,11 +40,19 @@ public class Deck {
         champion.getSynergies().forEach(status::put);
     }
 
+    public void remove(Champion champion) {
+        if (!champions.contains(champion)) {
+            return;
+        }
+        champions.remove(champion);
+        champion.getSynergies().forEach(status::remove);
+    }
+
     public int size() {
         return champions.size();
     }
 
-    public int value() {
+    public int score() {
         return status.score();
     }
 

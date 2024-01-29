@@ -1,5 +1,7 @@
 package com.zoo.autotft.domain;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import com.zoo.autotft.domain.synergy.Synergy;
 import com.zoo.autotft.repository.JsonRepositoryController;
 import com.zoo.autotft.repository.Repository;
@@ -52,6 +54,24 @@ class DeckTest {
         // then
         System.out.println("origin => " + origin);
         System.out.println("copy => " + copy);
+
+    }
+
+    @Test
+    @DisplayName("Deck remove 테스트")
+    void removeTest() {
+        // given
+        int level = 10;
+        List<Champion> champions = championOf(List.of("나미", "타릭", "케넨"));
+        List<Synergy> synergies = synergyOf(List.of("디스코"));
+        Deck deck = new Deck(level, champions, synergies);
+
+        // when
+        deck.remove(championRepository.findByName("타릭"));
+        int score = deck.score();
+
+        // then
+        assertThat(score).isEqualTo(0);
 
     }
 

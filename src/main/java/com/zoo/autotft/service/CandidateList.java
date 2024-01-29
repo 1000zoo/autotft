@@ -11,7 +11,7 @@ public class CandidateList {
 
     private final static int MAX_SIZE = 10;
 
-    private final Queue<Deck> candidateList = new PriorityQueue<>(Comparator.comparingInt(Deck::value));
+    private final Queue<Deck> candidateList = new PriorityQueue<>(Comparator.comparingInt(Deck::score));
 
     public void add(Deck deck) {
         candidateList.add(deck);

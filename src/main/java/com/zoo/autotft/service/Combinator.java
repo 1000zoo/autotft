@@ -27,7 +27,7 @@ public class Combinator {
 
     private void dfs(CandidateList candidateList, Deck current) {
         if (current.isFull()) {
-
+            candidateList.add(current);
         }
     }
 }
