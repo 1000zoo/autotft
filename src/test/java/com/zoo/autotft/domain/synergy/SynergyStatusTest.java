@@ -87,4 +87,24 @@ class SynergyStatusTest {
         assertThat(status.size()).isEqualTo(2);
 
     }
+
+    @Test
+    @DisplayName("활성화되는 시너지 수 구하는 기능 테스트")
+    void scoreTest() {
+        // given
+        SynergyStatus status = new SynergyStatus();
+        status.put(synergyRepository.findByName("디스코"));
+        status.put(synergyRepository.findByName("디스코"));
+        status.put(synergyRepository.findByName("디스코"));    // 시너지 한 개 활성
+        status.put(synergyRepository.findByName("수호자"));
+        status.put(synergyRepository.findByName("수호자"));    // 시너지 두 개 활성
+        status.put(synergyRepository.findByName("하이퍼팝"));   // 시너지 세 개 활성
+
+        // when
+        int score = status.score();
+
+        // then
+        assertThat(score).isEqualTo(3);
+
+    }
 }
