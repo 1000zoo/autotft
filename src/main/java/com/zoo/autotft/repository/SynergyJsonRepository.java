@@ -7,6 +7,7 @@ import com.zoo.autotft.domain.synergy.ActivateConditions;
 import com.zoo.autotft.domain.synergy.Class;
 import com.zoo.autotft.domain.synergy.Origin;
 import com.zoo.autotft.domain.synergy.Synergy;
+import com.zoo.autotft.domain.synergy.Unique;
 import com.zoo.autotft.util.ConstructorInterface;
 import java.io.File;
 import java.io.IOException;
@@ -18,6 +19,7 @@ import java.util.Map;
 public class SynergyJsonRepository implements JsonRepository<Synergy> {
     private final static String CLASS_PATH = "src/main/resources/json/class_data.json";
     private final static String ORIGIN_PATH = "src/main/resources/json/origin_data.json";
+    private final static String UNIQUE_PATH = "src/main/resources/json/unique_data.json";
 
     private final Map<String, Synergy> repository;
 
@@ -29,6 +31,7 @@ public class SynergyJsonRepository implements JsonRepository<Synergy> {
     private void initRepository() {
         initRepository(CLASS_PATH, Class::new);
         initRepository(ORIGIN_PATH, Origin::new);
+        initRepository(UNIQUE_PATH, Unique::new);
     }
 
     private void initRepository(String path, ConstructorInterface<String, ActivateConditions, Synergy> constructor) {

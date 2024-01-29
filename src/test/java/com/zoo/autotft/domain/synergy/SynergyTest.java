@@ -3,6 +3,7 @@ package com.zoo.autotft.domain.synergy;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.zoo.autotft.domain.Champion;
+import com.zoo.autotft.repository.JsonRepositoryController;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -123,5 +124,22 @@ class SynergyTest {
 
         // then
         assertThat(result).isEqualTo(4);
+    }
+
+    @Test
+    @DisplayName("isUnique 테스트")
+    void isUniqueTest() {
+        // given
+        Synergy synergy1 = JsonRepositoryController.getSynergyRepository().findByName("마에스트로");
+        Synergy synergy2 = JsonRepositoryController.getSynergyRepository().findByName("난동꾼");
+
+        // when
+        boolean answer1 = synergy1.isUnique();
+        boolean answer2 = synergy2.isUnique();
+
+        // then
+        assertThat(answer1).isEqualTo(true);
+        assertThat(answer2).isEqualTo(false);
+
     }
 }

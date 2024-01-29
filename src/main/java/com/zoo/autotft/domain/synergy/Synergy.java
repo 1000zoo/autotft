@@ -46,6 +46,10 @@ public abstract class Synergy {
         return getActivatedScore(count) > 0;
     }
 
+    public boolean isUnique() {
+        return getClass() == Unique.class;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {

@@ -6,6 +6,7 @@ import com.zoo.autotft.domain.synergy.Synergy;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -38,5 +39,12 @@ class SynergyJsonRepositoryTest {
                 IllegalArgumentException.class,
                 () -> repository.findByName(name)
         );
+    }
+
+    @Test
+    @DisplayName("고유 시너지 테스트")
+    void uniqueSynergyTest() {
+        Synergy synergy = repository.findByName("마에스트로");
+        
     }
 }
