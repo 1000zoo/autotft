@@ -54,7 +54,7 @@ public class SynergyStatus {
     public int score() {
         int score = 0;
         for (Synergy synergy : status.keySet()) {
-            score += synergy.getActivatedScore(status.get(synergy));
+            score += synergy.isActivated(status.get(synergy)) ? 1 : 0;
         }
         return score;
     }
