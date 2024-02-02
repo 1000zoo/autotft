@@ -40,7 +40,7 @@ public class JsonRepositoryController {
 
     private void setLinks() {
         Map<Synergy, List<ChampionSynergy>> synergyListMap = new HashMap<>();
-        for (Champion champion : championRepository.findAllList()) {
+        for (Champion champion : championRepository.getAllList()) {
             List<ChampionSynergy> championSynergies = new ArrayList<>();
             for (String synergyName : championRepository.findSynergiesByName(champion.getName())) {
                 Synergy synergy = synergyRepository.findByName(synergyName);

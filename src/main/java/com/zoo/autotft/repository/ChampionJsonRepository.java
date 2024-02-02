@@ -64,10 +64,6 @@ public class ChampionJsonRepository implements JsonRepository<Champion> {
         return repository.get(name);
     }
 
-    public List<Champion> findAllList() {
-        return new ArrayList<>(repository.values());
-    }
-
     @Override
     public List<Champion> getAllList() {
         return new ArrayList<>(repository.values());

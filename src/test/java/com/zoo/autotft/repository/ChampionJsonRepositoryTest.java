@@ -4,10 +4,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import com.zoo.autotft.domain.Champion;
-import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -42,12 +40,5 @@ class ChampionJsonRepositoryTest {
                 IllegalArgumentException.class,
                 () -> repository.findByName(name)
         );
-    }
-
-    @Test
-    @DisplayName("모든 시너지 정보를 불러온다.")
-    void findAllListTest() {
-        List<Champion> list = repository.findAllList();
-        assertThat(list.size()).isEqualTo(60);
     }
 }
