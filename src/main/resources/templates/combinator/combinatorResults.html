@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>추천된 TFT 조합 결과</title>
+</head>
+<body>
+
+<h2>추천된 TFT 조합</h2>
+
+<!-- 추천된 조합 목록 -->
+<div th:each="deck : ${recommendDecks}">
+    <h3>챔피언 목록:</h3>
+    <ul>
+        <li th:each="champion : ${deck.champions}" th:text="${champion.name}"></li>
+    </ul>
+
+    <h3>시너지 상태:</h3>
+    <table>
+        <tr>
+            <th>시너지</th>
+            <th>상태</th>
+        </tr>
+        <tr th:each="entry : ${deck.activations}">
+            <td th:text="${entry.key.name}"></td>
+            <td th:text="${entry.value}"></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

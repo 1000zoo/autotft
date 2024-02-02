@@ -2,6 +2,7 @@ package com.zoo.autotft.domain;
 
 import com.zoo.autotft.domain.synergy.Synergy;
 import com.zoo.autotft.domain.synergy.SynergyStatus;
+import com.zoo.autotft.dto.RecommendDeckDto;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -67,6 +68,10 @@ public class Deck {
 
     public List<Champion> getAllPossibleChampions() {
         return status.getAllPossibleChampions(new HashSet<>(champions));
+    }
+
+    public RecommendDeckDto getResultDto() {
+        return new RecommendDeckDto(champions, status.getSortedStatus());
     }
 
     @Override

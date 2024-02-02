@@ -3,6 +3,7 @@ package com.zoo.autotft.service;
 import com.zoo.autotft.domain.Champion;
 import com.zoo.autotft.domain.Deck;
 import com.zoo.autotft.domain.synergy.Synergy;
+import com.zoo.autotft.dto.RecommendDeckDto;
 import com.zoo.autotft.repository.Repository;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +23,7 @@ public class ConcurrentCombinator implements Combinator {
     }
 
     @Override
-    public List<Deck> combine(int maximumNumber, List<Champion> baseChampions, List<Synergy> synergies) {
+    public List<RecommendDeckDto> combine(int maximumNumber, List<Champion> baseChampions, List<Synergy> synergies) {
         CandidateList candidateList = new CandidateList();
         Deck current = new Deck(maximumNumber, baseChampions, synergies);
         List<Champion> remainingChampions = new ArrayList<>(allChampions);

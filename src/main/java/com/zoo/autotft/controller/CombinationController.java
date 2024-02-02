@@ -2,8 +2,11 @@ package com.zoo.autotft.controller;
 
 import com.zoo.autotft.domain.Champion;
 import com.zoo.autotft.domain.synergy.Synergy;
+import com.zoo.autotft.dto.RecommendDeckDto;
 import com.zoo.autotft.repository.JsonRepositoryController;
 import com.zoo.autotft.repository.Repository;
+import com.zoo.autotft.service.BasicCombinator;
+import com.zoo.autotft.service.Combinator;
 import java.util.List;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,10 +30,14 @@ public class CombinationController {
 
     @PostMapping("/combinator")
     public String showResults(@ModelAttribute("tftForm") TftSelectionForm form, Model model) {
+        Combinator combinator = new BasicCombinator(championRepository);
         int maxLevel = form.getLevel();
         List<Champion> selectedChampions = createChampionList(form.getSelectedChampions());
         List<Synergy> selectedSynergies = createSynergyList(form.getSelectedSynergies());
-        return "done";
+        List<RecommendDeckDto> results = combinator.combine(maxLevel, selectedChampions, selectedSynergies);
+        model.addAttribute("recommendDecks", results);
+        System.out.println(results);
+        return "combinator/combinatorResults";
     }
 
     private List<Champion> createChampionList(List<String> names) {

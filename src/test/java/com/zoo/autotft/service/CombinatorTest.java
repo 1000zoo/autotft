@@ -1,8 +1,8 @@
 package com.zoo.autotft.service;
 
 import com.zoo.autotft.domain.Champion;
-import com.zoo.autotft.domain.Deck;
 import com.zoo.autotft.domain.synergy.Synergy;
+import com.zoo.autotft.dto.RecommendDeckDto;
 import com.zoo.autotft.repository.JsonRepositoryController;
 import com.zoo.autotft.repository.Repository;
 import java.util.List;
@@ -33,7 +33,7 @@ class CombinatorTest {
 
         // when
         BasicCombinator basicCombinator = new BasicCombinator(championRepository);
-        List<Deck> combinedList = basicCombinator.combine(maximumNumber, champions, synergies);
+        List<RecommendDeckDto> combinedList = basicCombinator.combine(maximumNumber, champions, synergies);
 
         // then
 //        Assertions.assertThat(combinedList.size()).isEqualTo(maximumNumber);
@@ -53,7 +53,7 @@ class CombinatorTest {
 
         // when
         Combinator basicCombinator = new ConcurrentCombinator(championRepository);
-        List<Deck> combinedList = basicCombinator.combine(maximumNumber, champions, synergies);
+        List<RecommendDeckDto> combinedList = basicCombinator.combine(maximumNumber, champions, synergies);
 
         // then
 //        Assertions.assertThat(combinedList.size()).isEqualTo(maximumNumber);

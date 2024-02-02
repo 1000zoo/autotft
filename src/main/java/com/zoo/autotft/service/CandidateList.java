@@ -1,7 +1,7 @@
 package com.zoo.autotft.service;
 
 import com.zoo.autotft.domain.Deck;
-import java.util.ArrayList;
+import com.zoo.autotft.dto.RecommendDeckDto;
 import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
@@ -20,8 +20,8 @@ public class CandidateList {
         }
     }
 
-    public List<Deck> getResults() {
-        return new ArrayList<>(candidateList);
+    public List<RecommendDeckDto> getResults() {
+        return candidateList.stream().map(Deck::getResultDto).toList();
     }
 
     @Override
