@@ -7,6 +7,7 @@ import com.zoo.autotft.domain.Champion;
 import com.zoo.autotft.repository.ChampionJsonRepository;
 import com.zoo.autotft.repository.JsonRepositoryController;
 import com.zoo.autotft.repository.SynergyJsonRepository;
+import java.util.Map;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -122,6 +123,26 @@ class SynergyStatusTest {
 
         // then
         assertThat(score).isEqualTo(3);
+
+    }
+
+    @Test
+    @DisplayName("SynergyStatus 정렬 테스트")
+    void sortTest() {
+        // given
+        SynergyStatus status = new SynergyStatus();
+        status.put(championRepository.findByName("케인"));
+        status.put(championRepository.findByName("케일"));
+        status.put(championRepository.findByName("비에고"));
+        status.put(championRepository.findByName("나르"));
+
+        // when
+        Map<Synergy, Integer> results = status.getSortedStatus();
+
+        // then
+        for (Synergy synergy : results.keySet()) {
+            System.out.println(synergy.name + ": " + results.get(synergy));
+        }
 
     }
 }

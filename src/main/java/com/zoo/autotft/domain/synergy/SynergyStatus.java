@@ -4,6 +4,7 @@ import com.zoo.autotft.domain.Champion;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -69,6 +70,20 @@ public class SynergyStatus {
         }
         set.removeAll(alreadyContain);
         return new ArrayList<>(set);
+    }
+
+    public Map<Synergy, Integer> getSortedStatus() {
+        Map<Synergy, Integer> map = new LinkedHashMap<>();
+
+        List<Synergy> list = status.keySet().stream()
+                .sorted((s1, s2) -> s1.compareTo(s2) != 0 ? s1.compareTo(s2) : status.get(s2) - status.get(s1))
+                .toList();
+
+        for (Synergy synergy : list) {
+            map.put(synergy, status.get(synergy));
+        }
+
+        return map;
     }
 
     @Override
