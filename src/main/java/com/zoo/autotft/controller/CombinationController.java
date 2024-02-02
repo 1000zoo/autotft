@@ -36,7 +36,6 @@ public class CombinationController {
         List<Synergy> selectedSynergies = createSynergyList(form.getSelectedSynergies());
         List<RecommendDeckDto> results = combinator.combine(maxLevel, selectedChampions, selectedSynergies);
         model.addAttribute("recommendDecks", results);
-        System.out.println(results);
         return "combinator/combinatorResults";
     }
 
