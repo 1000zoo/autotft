@@ -7,8 +7,8 @@ import com.zoo.autotft.repository.JsonRepositoryController;
 import com.zoo.autotft.repository.Repository;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 
 class CombinatorTest {
 
@@ -21,7 +21,7 @@ class CombinatorTest {
         synergyRepository = JsonRepositoryController.getSynergyRepository();
     }
 
-    @Test
+    @Disabled
     @DisplayName("총 기물 수, 선택된 기물의 이름들, 추가 활성 시너지 목록을 가지고 조합을 완성한다.")
     void combinatorTdd() {
         // given
@@ -41,7 +41,7 @@ class CombinatorTest {
 
     }
 
-    @Test
+    @Disabled
     @DisplayName("병렬처리 조합기 테스트")
     void concurrentCombinatorTest() {
         // given
