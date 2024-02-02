@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>TFT 챔피언 및 시너지 선택</title>
+</head>
+<body>
+
+<h2>TFT 챔피언 및 시너지 선택</h2>
+
+<!-- 선택 폼 -->
+<form th:action="@{/combinator}" th:object="${tftForm}" method="post">
+    <!-- 레벨 선택 드롭다운 -->
+    <div>
+        <label for="level">레벨 선택:</label>
+        <select id="level" th:field="*{level}">
+            <option th:each="num : ${#numbers.sequence(6, 20)}" th:value="${num}" th:text="${num}"></option>
+        </select>
+    </div>
+
+    <!-- 챔피언 다중 선택 -->
+    <div>
+        <h3>챔피언 선택:</h3>
+        <div th:each="champion, iterStat : ${champions}">
+            <input type="checkbox" th:id="${'champion' + iterStat.index}" th:field="*{selectedChampions}"
+                   th:value="${champion.name}"/>
+            <label th:for="${'champion' + iterStat.index}" th:text="${champion.name}"></label>
+        </div>
+    </div>
+
+    <!-- 시너지 다중 선택 -->
+    <div>
+        <h3>시너지 선택:</h3>
+        <div th:each="synergy, iterStat : ${synergies}">
+            <input type="checkbox" th:id="${'synergy' + iterStat.index}" th:field="*{selectedSynergies}"
+                   th:value="${synergy}"/>
+            <label th:for="${'synergy' + iterStat.index}" th:text="${synergy}"></label>
+        </div>
+    </div>
+
+    <!-- 제출 버튼 -->
+    <button type="submit">선택 완료</button>
+</form>
+
+</body>
+</html>
