@@ -1,0 +1,554 @@
+{
+  "나미": {
+    "name": "나미",
+    "cost": "1",
+    "synergies": [
+      "디스코",
+      "현혹술사"
+    ],
+    "imagePath": "/img/나미.jpg"
+  },
+  "릴리아": {
+    "name": "릴리아",
+    "cost": "1",
+    "synergies": [
+      "KDA",
+      "감시자",
+      "열혈 팬"
+    ],
+    "imagePath": "/img/릴리아.jpg"
+  },
+  "바이": {
+    "name": "바이",
+    "cost": "1",
+    "synergies": [
+      "펑크",
+      "춤꾼"
+    ],
+    "imagePath": "/img/바이.jpg"
+  },
+  "애니": {
+    "name": "애니",
+    "cost": "1",
+    "synergies": [
+      "이모코어",
+      "주문술사"
+    ],
+    "imagePath": "/img/애니.jpg"
+  },
+  "야스오": {
+    "name": "야스오",
+    "cost": "1",
+    "synergies": [
+      "True Damage",
+      "이단아"
+    ],
+    "imagePath": "/img/야스오.jpg"
+  },
+  "올라프": {
+    "name": "올라프",
+    "cost": "1",
+    "synergies": [
+      "펜타킬",
+      "난동꾼"
+    ],
+    "imagePath": "/img/올라프.jpg"
+  },
+  "이블린": {
+    "name": "이블린",
+    "cost": "1",
+    "synergies": [
+      "KDA",
+      "스테이지 다이버"
+    ],
+    "imagePath": "/img/이블린.jpg"
+  },
+  "징크스": {
+    "name": "징크스",
+    "cost": "1",
+    "synergies": [
+      "펑크",
+      "속사포"
+    ],
+    "imagePath": "/img/징크스.jpg"
+  },
+  "케넨": {
+    "name": "케넨",
+    "cost": "1",
+    "synergies": [
+      "True Damage",
+      "수호자",
+      "열혈 팬"
+    ],
+    "imagePath": "/img/케넨.jpg"
+  },
+  "코르키": {
+    "name": "코르키",
+    "cost": "1",
+    "synergies": [
+      "8비트",
+      "거물"
+    ],
+    "imagePath": "/img/코르키.jpg"
+  },
+  "크산테": {
+    "name": "크산테",
+    "cost": "1",
+    "synergies": [
+      "Heartsteel",
+      "감시자"
+    ],
+    "imagePath": "/img/크산테.jpg"
+  },
+  "타릭": {
+    "name": "타릭",
+    "cost": "1",
+    "synergies": [
+      "디스코",
+      "수호자"
+    ],
+    "imagePath": "/img/타릭.jpg"
+  },
+  "탐켄치": {
+    "name": "탐켄치",
+    "cost": "1",
+    "synergies": [
+      "컨트리",
+      "난동꾼"
+    ],
+    "imagePath": "/img/탐켄치.jpg"
+  },
+  "가렌": {
+    "name": "가렌",
+    "cost": "2",
+    "synergies": [
+      "8비트",
+      "감시자"
+    ],
+    "imagePath": "/img/가렌.jpg"
+  },
+  "그라가스": {
+    "name": "그라가스",
+    "cost": "2",
+    "synergies": [
+      "디스코",
+      "난동꾼",
+      "주문술사"
+    ],
+    "imagePath": "/img/그라가스.jpg"
+  },
+  "나르": {
+    "name": "나르",
+    "cost": "2",
+    "synergies": [
+      "펜타킬",
+      "열혈 팬",
+      "춤꾼"
+    ],
+    "imagePath": "/img/나르.jpg"
+  },
+  "바드": {
+    "name": "바드",
+    "cost": "2",
+    "synergies": [
+      "재즈",
+      "현혹술사"
+    ],
+    "imagePath": "/img/바드.jpg"
+  },
+  "세나": {
+    "name": "세나",
+    "cost": "2",
+    "synergies": [
+      "True Damage",
+      "속사포"
+    ],
+    "imagePath": "/img/세나.jpg"
+  },
+  "세라핀": {
+    "name": "세라핀",
+    "cost": "2",
+    "synergies": [
+      "KDA",
+      "주문술사"
+    ],
+    "imagePath": "/img/세라핀.jpg"
+  },
+  "아펠리오스": {
+    "name": "아펠리오스",
+    "cost": "2",
+    "synergies": [
+      "Heartsteel",
+      "속사포"
+    ],
+    "imagePath": "/img/아펠리오스.jpg"
+  },
+  "잭스": {
+    "name": "잭스",
+    "cost": "2",
+    "synergies": [
+      "EDM",
+      "춤꾼"
+    ],
+    "imagePath": "/img/잭스.jpg"
+  },
+  "카이사": {
+    "name": "카이사",
+    "cost": "2",
+    "synergies": [
+      "KDA",
+      "거물"
+    ],
+    "imagePath": "/img/카이사.jpg"
+  },
+  "카타리나": {
+    "name": "카타리나",
+    "cost": "2",
+    "synergies": [
+      "컨트리",
+      "스테이지 다이버"
+    ],
+    "imagePath": "/img/카타리나.jpg"
+  },
+  "케일": {
+    "name": "케일",
+    "cost": "2",
+    "synergies": [
+      "펜타킬",
+      "이단아"
+    ],
+    "imagePath": "/img/케일.jpg"
+  },
+  "트위치": {
+    "name": "트위치",
+    "cost": "2",
+    "synergies": [
+      "펑크",
+      "처형자"
+    ],
+    "imagePath": "/img/트위치.jpg"
+  },
+  "판테온": {
+    "name": "판테온",
+    "cost": "2",
+    "synergies": [
+      "펑크",
+      "수호자"
+    ],
+    "imagePath": "/img/판테온.jpg"
+  },
+  "니코": {
+    "name": "니코",
+    "cost": "3",
+    "synergies": [
+      "KDA",
+      "수호자",
+      "열혈 팬"
+    ],
+    "imagePath": "/img/니코.jpg"
+  },
+  "럭스": {
+    "name": "럭스",
+    "cost": "3",
+    "synergies": [
+      "EDM",
+      "현혹술사"
+    ],
+    "imagePath": "/img/럭스.jpg"
+  },
+  "룰루": {
+    "name": "룰루",
+    "cost": "3",
+    "synergies": [
+      "하이퍼팝",
+      "주문술사"
+    ],
+    "imagePath": "/img/룰루.jpg"
+  },
+  "리븐": {
+    "name": "리븐",
+    "cost": "3",
+    "synergies": [
+      "8비트",
+      "이단아"
+    ],
+    "imagePath": "/img/리븐.jpg"
+  },
+  "모데카이저": {
+    "name": "모데카이저",
+    "cost": "3",
+    "synergies": [
+      "펜타킬",
+      "감시자"
+    ],
+    "imagePath": "/img/모데카이저.jpg"
+  },
+  "미스포츈": {
+    "name": "미스포츈",
+    "cost": "3",
+    "synergies": [
+      "재즈",
+      "거물"
+    ],
+    "imagePath": "/img/미스포츈.jpg"
+  },
+  "백스": {
+    "name": "백스",
+    "cost": "3",
+    "synergies": [
+      "이모코어",
+      "처형자"
+    ],
+    "imagePath": "/img/백스.jpg"
+  },
+  "사미라": {
+    "name": "사미라",
+    "cost": "3",
+    "synergies": [
+      "컨트리",
+      "처형자"
+    ],
+    "imagePath": "/img/사미라.jpg"
+  },
+  "세트": {
+    "name": "세트",
+    "cost": "3",
+    "synergies": [
+      "Heartsteel",
+      "난동꾼",
+      "춤꾼"
+    ],
+    "imagePath": "/img/세트.jpg"
+  },
+  "아무무": {
+    "name": "아무무",
+    "cost": "3",
+    "synergies": [
+      "이모코어",
+      "수호자"
+    ],
+    "imagePath": "/img/아무무.jpg"
+  },
+  "에코": {
+    "name": "에코",
+    "cost": "3",
+    "synergies": [
+      "True Damage",
+      "감시자",
+      "주문술사"
+    ],
+    "imagePath": "/img/에코.jpg"
+  },
+  "요네": {
+    "name": "요네",
+    "cost": "3",
+    "synergies": [
+      "Heartsteel",
+      "스테이지 다이버",
+      "이단아"
+    ],
+    "imagePath": "/img/요네.jpg"
+  },
+  "우르곳": {
+    "name": "우르곳",
+    "cost": "3",
+    "synergies": [
+      "컨트리",
+      "춤꾼"
+    ],
+    "imagePath": "/img/우르곳.jpg"
+  },
+  "블리츠크랭크": {
+    "name": "블리츠크랭크",
+    "cost": "4",
+    "synergies": [
+      "디스코",
+      "감시자"
+    ],
+    "imagePath": "/img/블리츠크랭크.jpg"
+  },
+  "비에고": {
+    "name": "비에고",
+    "cost": "4",
+    "synergies": [
+      "펜타킬",
+      "이단아"
+    ],
+    "imagePath": "/img/비에고.jpg"
+  },
+  "뽀삐": {
+    "name": "뽀삐",
+    "cost": "4",
+    "synergies": [
+      "이모코어",
+      "춤꾼"
+    ],
+    "imagePath": "/img/뽀삐.jpg"
+  },
+  "쓰레쉬": {
+    "name": "쓰레쉬",
+    "cost": "4",
+    "synergies": [
+      "컨트리",
+      "수호자"
+    ],
+    "imagePath": "/img/쓰레쉬.jpg"
+  },
+  "아리": {
+    "name": "아리",
+    "cost": "4",
+    "synergies": [
+      "KDA",
+      "주문술사"
+    ],
+    "imagePath": "/img/아리.jpg"
+  },
+  "아칼리 (KDA)": {
+    "name": "아칼리 (KDA)",
+    "cost": "4",
+    "synergies": [
+      "KDA",
+      "빅히트",
+      "처형자"
+    ],
+    "imagePath": "/img/아칼리 (KDA).jpg"
+  },
+  "아칼리 (True Damage)": {
+    "name": "아칼리 (True Damage)",
+    "cost": "4",
+    "synergies": [
+      "True Damage",
+      "빅히트",
+      "처형자"
+    ],
+    "imagePath": "/img/아칼리 (True Damage).jpg"
+  },
+  "이즈리얼": {
+    "name": "이즈리얼",
+    "cost": "4",
+    "synergies": [
+      "Heartsteel",
+      "거물"
+    ],
+    "imagePath": "/img/이즈리얼.jpg"
+  },
+  "자크": {
+    "name": "자크",
+    "cost": "4",
+    "synergies": [
+      "EDM",
+      "난동꾼"
+    ],
+    "imagePath": "/img/자크.jpg"
+  },
+  "제드": {
+    "name": "제드",
+    "cost": "4",
+    "synergies": [
+      "EDM",
+      "스테이지 다이버"
+    ],
+    "imagePath": "/img/제드.jpg"
+  },
+  "카서스": {
+    "name": "카서스",
+    "cost": "4",
+    "synergies": [
+      "펜타킬",
+      "처형자"
+    ],
+    "imagePath": "/img/카서스.jpg"
+  },
+  "케이틀린": {
+    "name": "케이틀린",
+    "cost": "4",
+    "synergies": [
+      "8비트",
+      "속사포"
+    ],
+    "imagePath": "/img/케이틀린.jpg"
+  },
+  "트위스티드 페이트": {
+    "name": "트위스티드 페이트",
+    "cost": "4",
+    "synergies": [
+      "디스코",
+      "현혹술사"
+    ],
+    "imagePath": "/img/트위스티드 페이트.jpg"
+  },
+  "루시안": {
+    "name": "루시안",
+    "cost": "5",
+    "synergies": [
+      "재즈",
+      "속사포"
+    ],
+    "imagePath": "/img/루시안.jpg"
+  },
+  "소나": {
+    "name": "소나",
+    "cost": "5",
+    "synergies": [
+      "믹스마스터",
+      "주문술사"
+    ],
+    "imagePath": "/img/소나.jpg"
+  },
+  "요릭": {
+    "name": "요릭",
+    "cost": "5",
+    "synergies": [
+      "펜타킬",
+      "수호자",
+      "춤꾼"
+    ],
+    "imagePath": "/img/요릭.jpg"
+  },
+  "일라오이": {
+    "name": "일라오이",
+    "cost": "5",
+    "synergies": [
+      "일류비트",
+      "난동꾼"
+    ],
+    "imagePath": "/img/일라오이.jpg"
+  },
+  "직스": {
+    "name": "직스",
+    "cost": "5",
+    "synergies": [
+      "하이퍼팝",
+      "현혹술사"
+    ],
+    "imagePath": "/img/직스.jpg"
+  },
+  "진": {
+    "name": "진",
+    "cost": "5",
+    "synergies": [
+      "마에스트로",
+      "거물"
+    ],
+    "imagePath": "/img/진.jpg"
+  },
+  "케인": {
+    "name": "케인",
+    "cost": "5",
+    "synergies": [
+      "Heartsteel",
+      "와일드카드",
+      "이단아"
+    ],
+    "imagePath": "/img/케인.jpg"
+  },
+  "키아나": {
+    "name": "키아나",
+    "cost": "5",
+    "synergies": [
+      "True Damage",
+      "스테이지 다이버"
+    ],
+    "imagePath": "/img/키아나.jpg"
+  }
+}
