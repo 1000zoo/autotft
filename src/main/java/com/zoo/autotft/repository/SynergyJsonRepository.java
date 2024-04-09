@@ -17,9 +17,12 @@ import java.util.List;
 import java.util.Map;
 
 public class SynergyJsonRepository implements JsonRepository<Synergy> {
-    private final static String CLASS_PATH = "src/main/resources/json/class_data.json";
-    private final static String ORIGIN_PATH = "src/main/resources/json/origin_data.json";
-    private final static String UNIQUE_PATH = "src/main/resources/json/unique_data.json";
+
+    private final static String SEASON = "season10";
+
+    private final static String CLASS_PATH = "src/main/resources/json/" + SEASON + "/class_data.json";
+    private final static String ORIGIN_PATH = "src/main/resources/json/" + SEASON + "/origin_data.json";
+    private final static String UNIQUE_PATH = "src/main/resources/json/" + SEASON + "/unique_data.json";
 
     private final Map<String, Synergy> repository;
 
