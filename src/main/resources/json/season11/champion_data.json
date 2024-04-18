@@ -1,554 +1,554 @@
 {
-    "가렌": {
-        "name": "가렌",
-        "cost": "1",
-        "synergies": [
-            "이야기꾼",
-            "파수꾼"
-        ],
-        "imgpath": "/img/가렌.jpg"
-    },
-    "갈리오": {
-        "name": "갈리오",
-        "cost": "4",
-        "synergies": [
-            "이야기꾼",
-            "난동꾼"
-        ],
-        "imgpath": "/img/갈리오.jpg"
-    },
-    "나르": {
-        "name": "나르",
-        "cost": "2",
-        "synergies": [
-            "숲지기",
-            "파수꾼"
-        ],
-        "imgpath": "/img/나르.jpg"
-    },
-    "노틸러스": {
-        "name": "노틸러스",
-        "cost": "4",
-        "synergies": [
-            "신화",
-            "파수꾼"
-        ],
-        "imgpath": "/img/노틸러스.jpg"
-    },
-    "니코": {
-        "name": "니코",
-        "cost": "2",
-        "synergies": [
-            "",
-            "",
-            "비전 마법사"
-        ],
-        "imgpath": "/img/니코.jpg"
-    },
-    "다리우스": {
-        "name": "다리우스",
-        "cost": "1",
-        "synergies": [
-            "암영",
-            "결투가"
-        ],
-        "imgpath": "/img/다리우스.jpg"
-    },
-    "다이애나": {
-        "name": "다이애나",
-        "cost": "3",
-        "synergies": [
-            "용군주",
-            "현자"
-        ],
-        "imgpath": "/img/다이애나.jpg"
-    },
-    "라칸": {
-        "name": "라칸",
-        "cost": "5",
-        "synergies": [
-            "용군주",
-            "",
-            ""
-        ],
-        "imgpath": "/img/라칸.jpg"
-    },
-    "럭스": {
-        "name": "럭스",
-        "cost": "2",
-        "synergies": [
-            "도자기",
-            "비전 마법사"
-        ],
-        "imgpath": "/img/럭스.jpg"
-    },
-    "렉사이": {
-        "name": "렉사이",
-        "cost": "1",
-        "synergies": [
-            "숲지기",
-            "난동꾼"
-        ],
-        "imgpath": "/img/렉사이.jpg"
-    },
-    "리 신": {
-        "name": "리 신",
-        "cost": "4",
-        "synergies": [
-            "용군주",
-            "결투가"
-        ],
-        "imgpath": "/img/리 신.jpg"
-    },
-    "리븐": {
-        "name": "리븐",
-        "cost": "2",
-        "synergies": [
-            "이야기꾼",
-            "",
-            ""
-        ],
-        "imgpath": "/img/리븐.jpg"
-    },
-    "리산드라": {
-        "name": "리산드라",
-        "cost": "5",
-        "synergies": [
-            "도자기",
-            "비전 마법사"
-        ],
-        "imgpath": "/img/리산드라.jpg"
-    },
-    "릴리아": {
-        "name": "릴리아",
-        "cost": "4",
-        "synergies": [
-            "신화",
-            "기원자"
-        ],
-        "imgpath": "/img/릴리아.jpg"
-    },
-    "말파이트": {
-        "name": "말파이트",
-        "cost": "1",
-        "synergies": [
-            "천계",
-            "거대 괴수"
-        ],
-        "imgpath": "/img/말파이트.jpg"
-    },
-    "모르가나": {
-        "name": "모르가나",
-        "cost": "4",
-        "synergies": [
-            "혼령",
-            "현자"
-        ],
-        "imgpath": "/img/모르가나.jpg"
-    },
-    "바드": {
-        "name": "바드",
-        "cost": "3",
-        "synergies": [
-            "신화",
-            "재주꾼"
-        ],
-        "imgpath": "/img/바드.jpg"
-    },
-    "볼리베어": {
-        "name": "볼리베어",
-        "cost": "3",
-        "synergies": [
-            "먹그림자",
-            "결투가"
-        ],
-        "imgpath": "/img/볼리베어.jpg"
-    },
-    "사일러스": {
-        "name": "사일러스",
-        "cost": "4",
-        "synergies": [
-            "암영",
-            "난동꾼"
-        ],
-        "imgpath": "/img/사일러스.jpg"
-    },
-    "세나": {
-        "name": "세나",
-        "cost": "2",
-        "synergies": [
-            "먹그림자",
-            "저격수"
-        ],
-        "imgpath": "/img/세나.jpg"
-    },
-    "세트": {
-        "name": "세트",
-        "cost": "5",
-        "synergies": [
-            "",
-            "",
-            "파수꾼"
-        ],
-        "imgpath": "/img/세트.jpg"
-    },
-    "소라카": {
-        "name": "소라카",
-        "cost": "3",
-        "synergies": [
-            "천계",
-            "이타심"
-        ],
-        "imgpath": "/img/소라카.jpg"
-    },
-    "쉔": {
-        "name": "쉔",
-        "cost": "2",
-        "synergies": [
-            "혼령",
-            "거대 괴수"
-        ],
-        "imgpath": "/img/쉔.jpg"
-    },
-    "시비르": {
-        "name": "시비르",
-        "cost": "1",
-        "synergies": [
-            "이야기꾼",
-            "재주꾼"
-        ],
-        "imgpath": "/img/시비르.jpg"
-    },
-    "신드라": {
-        "name": "신드라",
-        "cost": "4",
-        "synergies": [
-            "필연",
-            "비전 마법사"
-        ],
-        "imgpath": "/img/신드라.jpg"
-    },
-    "쓰레쉬": {
-        "name": "쓰레쉬",
-        "cost": "3",
-        "synergies": [
-            "필연",
-            "거대 괴수"
-        ],
-        "imgpath": "/img/쓰레쉬.jpg"
-    },
-    "아리": {
-        "name": "아리",
-        "cost": "1",
-        "synergies": [
-            "필연",
-            "비전 마법사"
-        ],
-        "imgpath": "/img/아리.jpg"
-    },
-    "아무무": {
-        "name": "아무무",
-        "cost": "3",
-        "synergies": [
-            "도자기",
-            "파수꾼"
-        ],
-        "imgpath": "/img/아무무.jpg"
-    },
-    "아지르": {
-        "name": "아지르",
-        "cost": "5",
-        "synergies": [
-            "숲지기",
-            "기원자"
-        ],
-        "imgpath": "/img/아지르.jpg"
-    },
-    "아트록스": {
-        "name": "아트록스",
-        "cost": "2",
-        "synergies": [
-            "",
-            "",
-            "난동꾼"
-        ],
-        "imgpath": "/img/아트록스.jpg"
-    },
-    "아펠리오스": {
-        "name": "아펠리오스",
-        "cost": "3",
-        "synergies": [
-            "필연",
-            "저격수"
-        ],
-        "imgpath": "/img/아펠리오스.jpg"
-    },
-    "알룬": {
-        "name": "알룬",
-        "cost": "3",
-        "synergies": [
-            "암영",
-            "기원자"
-        ],
-        "imgpath": "/img/알룬.jpg"
-    },
-    "애니": {
-        "name": "애니",
-        "cost": "4",
-        "synergies": [
-            "행운",
-            "기원자"
-        ],
-        "imgpath": "/img/애니.jpg"
-    },
-    "애쉬": {
-        "name": "애쉬",
-        "cost": "4",
-        "synergies": [
-            "도자기",
-            "저격수"
-        ],
-        "imgpath": "/img/애쉬.jpg"
-    },
-    "야스오": {
-        "name": "야스오",
-        "cost": "1",
-        "synergies": [
-            "필연",
-            "결투가"
-        ],
-        "imgpath": "/img/야스오.jpg"
-    },
-    "오공": {
-        "name": "오공",
-        "cost": "5",
-        "synergies": [
-            "천계",
-            "",
-            ""
-        ],
-        "imgpath": "/img/오공.jpg"
-    },
-    "오른": {
-        "name": "오른",
-        "cost": "4",
-        "synergies": [
-            "숲지기",
-            "거대 괴수"
-        ],
-        "imgpath": "/img/오른.jpg"
-    },
-    "요네": {
-        "name": "요네",
-        "cost": "3",
-        "synergies": [
-            "암영",
-            "사신"
-        ],
-        "imgpath": "/img/요네.jpg"
-    },
-    "요릭": {
-        "name": "요릭",
-        "cost": "2",
-        "synergies": [
-            "암영",
-            "거대 괴수"
-        ],
-        "imgpath": "/img/요릭.jpg"
-    },
-    "우디르": {
-        "name": "우디르",
-        "cost": "5",
-        "synergies": [
-            "먹그림자",
-            "",
-            ""
-        ],
-        "imgpath": "/img/우디르.jpg"
-    },
-    "이렐리아": {
-        "name": "이렐리아",
-        "cost": "5",
-        "synergies": [
-            "이야기꾼",
-            "결투가"
-        ],
-        "imgpath": "/img/이렐리아.jpg"
-    },
-    "일라오이": {
-        "name": "일라오이",
-        "cost": "3",
-        "synergies": [
-            "혼령",
-            "",
-            ""
-        ],
-        "imgpath": "/img/일라오이.jpg"
-    },
-    "자야": {
-        "name": "자야",
-        "cost": "5",
-        "synergies": [
-            "용군주",
-            "",
-            ""
-        ],
-        "imgpath": "/img/자야.jpg"
-    },
-    "자이라": {
-        "name": "자이라",
-        "cost": "2",
-        "synergies": [
-            "이야기꾼",
-            "현자"
-        ],
-        "imgpath": "/img/자이라.jpg"
-    },
-    "잔나": {
-        "name": "잔나",
-        "cost": "2",
-        "synergies": [
-            "용군주",
-            "기원자"
-        ],
-        "imgpath": "/img/잔나.jpg"
-    },
-    "잭스": {
-        "name": "잭스",
-        "cost": "1",
-        "synergies": [
-            "먹그림자",
-            "파수꾼"
-        ],
-        "imgpath": "/img/잭스.jpg"
-    },
-    "조이": {
-        "name": "조이",
-        "cost": "3",
-        "synergies": [
-            "",
-            "",
-            "비전 마법사"
-        ],
-        "imgpath": "/img/조이.jpg"
-    },
-    "초가스": {
-        "name": "초가스",
-        "cost": "1",
-        "synergies": [
-            "신화",
-            "거대 괴수"
-        ],
-        "imgpath": "/img/초가스.jpg"
-    },
-    "카이사": {
-        "name": "카이사",
-        "cost": "4",
-        "synergies": [
-            "먹그림자",
-            "재주꾼"
-        ],
-        "imgpath": "/img/카이사.jpg"
-    },
-    "카직스": {
-        "name": "카직스",
-        "cost": "1",
-        "synergies": [
-            "천계",
-            "사신"
-        ],
-        "imgpath": "/img/카직스.jpg"
-    },
-    "케이틀린": {
-        "name": "케이틀린",
-        "cost": "1",
-        "synergies": [
-            "혼령",
-            "저격수"
-        ],
-        "imgpath": "/img/케이틀린.jpg"
-    },
-    "케인": {
-        "name": "케인",
-        "cost": "4",
-        "synergies": [
-            "혼령",
-            "사신"
-        ],
-        "imgpath": "/img/케인.jpg"
-    },
-    "코그모": {
-        "name": "코그모",
-        "cost": "1",
-        "synergies": [
-            "신화",
-            "",
-            ""
-        ],
-        "imgpath": "/img/코그모.jpg"
-    },
-    "코부코": {
-        "name": "코부코",
-        "cost": "1",
-        "synergies": [
-            "행운",
-            "난동꾼"
-        ],
-        "imgpath": "/img/코부코.jpg"
-    },
-    "키아나": {
-        "name": "키아나",
-        "cost": "2",
-        "synergies": [
-            "천계",
-            "결투가"
-        ],
-        "imgpath": "/img/키아나.jpg"
-    },
-    "킨드레드": {
-        "name": "킨드레드",
-        "cost": "2",
-        "synergies": [
-            "",
-            "",
-            "사신"
-        ],
-        "imgpath": "/img/킨드레드.jpg"
-    },
-    "탐 켄치": {
-        "name": "탐 켄치",
-        "cost": "3",
-        "synergies": [
-            "신화",
-            "난동꾼"
-        ],
-        "imgpath": "/img/탐 켄치.jpg"
-    },
-    "트리스타나": {
-        "name": "트리스타나",
-        "cost": "3",
-        "synergies": [
-            "행운",
-            "결투가"
-        ],
-        "imgpath": "/img/트리스타나.jpg"
-    },
-    "티모": {
-        "name": "티모",
-        "cost": "2",
-        "synergies": [
-            "행운",
-            "재주꾼"
-        ],
-        "imgpath": "/img/티모.jpg"
-    },
-    "흐웨이": {
-        "name": "흐웨이",
-        "cost": "5",
-        "synergies": [
-            "신화",
-            "예술가"
-        ],
-        "imgpath": "/img/흐웨이.jpg"
-    }
+  "가렌": {
+    "name": "가렌",
+    "cost": "1",
+    "synergies": [
+      "이야기꾼",
+      "파수꾼"
+    ],
+    "imgpath": "/img/가렌.jpg"
+  },
+  "갈리오": {
+    "name": "갈리오",
+    "cost": "4",
+    "synergies": [
+      "이야기꾼",
+      "난동꾼"
+    ],
+    "imgpath": "/img/갈리오.jpg"
+  },
+  "나르": {
+    "name": "나르",
+    "cost": "2",
+    "synergies": [
+      "숲지기",
+      "파수꾼"
+    ],
+    "imgpath": "/img/나르.jpg"
+  },
+  "노틸러스": {
+    "name": "노틸러스",
+    "cost": "4",
+    "synergies": [
+      "신화",
+      "파수꾼"
+    ],
+    "imgpath": "/img/노틸러스.jpg"
+  },
+  "니코": {
+    "name": "니코",
+    "cost": "2",
+    "synergies": [
+      "천계",
+      "신화",
+      "비전 마법사"
+    ],
+    "imgpath": "/img/니코.jpg"
+  },
+  "다리우스": {
+    "name": "다리우스",
+    "cost": "1",
+    "synergies": [
+      "암영",
+      "결투가"
+    ],
+    "imgpath": "/img/다리우스.jpg"
+  },
+  "다이애나": {
+    "name": "다이애나",
+    "cost": "3",
+    "synergies": [
+      "용군주",
+      "현자"
+    ],
+    "imgpath": "/img/다이애나.jpg"
+  },
+  "라칸": {
+    "name": "라칸",
+    "cost": "5",
+    "synergies": [
+      "용군주",
+      "연인",
+      "이타심"
+    ],
+    "imgpath": "/img/라칸.jpg"
+  },
+  "럭스": {
+    "name": "럭스",
+    "cost": "2",
+    "synergies": [
+      "도자기",
+      "비전 마법사"
+    ],
+    "imgpath": "/img/럭스.jpg"
+  },
+  "렉사이": {
+    "name": "렉사이",
+    "cost": "1",
+    "synergies": [
+      "숲지기",
+      "난동꾼"
+    ],
+    "imgpath": "/img/렉사이.jpg"
+  },
+  "리 신": {
+    "name": "리 신",
+    "cost": "4",
+    "synergies": [
+      "용군주",
+      "결투가"
+    ],
+    "imgpath": "/img/리 신.jpg"
+  },
+  "리븐": {
+    "name": "리븐",
+    "cost": "2",
+    "synergies": [
+      "이야기꾼",
+      "난동꾼",
+      "이타심"
+    ],
+    "imgpath": "/img/리븐.jpg"
+  },
+  "리산드라": {
+    "name": "리산드라",
+    "cost": "5",
+    "synergies": [
+      "도자기",
+      "비전 마법사"
+    ],
+    "imgpath": "/img/리산드라.jpg"
+  },
+  "릴리아": {
+    "name": "릴리아",
+    "cost": "4",
+    "synergies": [
+      "신화",
+      "기원자"
+    ],
+    "imgpath": "/img/릴리아.jpg"
+  },
+  "말파이트": {
+    "name": "말파이트",
+    "cost": "1",
+    "synergies": [
+      "천계",
+      "거대 괴수"
+    ],
+    "imgpath": "/img/말파이트.jpg"
+  },
+  "모르가나": {
+    "name": "모르가나",
+    "cost": "4",
+    "synergies": [
+      "혼령",
+      "현자"
+    ],
+    "imgpath": "/img/모르가나.jpg"
+  },
+  "바드": {
+    "name": "바드",
+    "cost": "3",
+    "synergies": [
+      "신화",
+      "재주꾼"
+    ],
+    "imgpath": "/img/바드.jpg"
+  },
+  "볼리베어": {
+    "name": "볼리베어",
+    "cost": "3",
+    "synergies": [
+      "먹그림자",
+      "결투가"
+    ],
+    "imgpath": "/img/볼리베어.jpg"
+  },
+  "사일러스": {
+    "name": "사일러스",
+    "cost": "4",
+    "synergies": [
+      "암영",
+      "난동꾼"
+    ],
+    "imgpath": "/img/사일러스.jpg"
+  },
+  "세나": {
+    "name": "세나",
+    "cost": "2",
+    "synergies": [
+      "먹그림자",
+      "저격수"
+    ],
+    "imgpath": "/img/세나.jpg"
+  },
+  "세트": {
+    "name": "세트",
+    "cost": "5",
+    "synergies": [
+      "필연",
+      "암영",
+      "파수꾼"
+    ],
+    "imgpath": "/img/세트.jpg"
+  },
+  "소라카": {
+    "name": "소라카",
+    "cost": "3",
+    "synergies": [
+      "천계",
+      "이타심"
+    ],
+    "imgpath": "/img/소라카.jpg"
+  },
+  "쉔": {
+    "name": "쉔",
+    "cost": "2",
+    "synergies": [
+      "혼령",
+      "거대 괴수"
+    ],
+    "imgpath": "/img/쉔.jpg"
+  },
+  "시비르": {
+    "name": "시비르",
+    "cost": "1",
+    "synergies": [
+      "이야기꾼",
+      "재주꾼"
+    ],
+    "imgpath": "/img/시비르.jpg"
+  },
+  "신드라": {
+    "name": "신드라",
+    "cost": "4",
+    "synergies": [
+      "필연",
+      "비전 마법사"
+    ],
+    "imgpath": "/img/신드라.jpg"
+  },
+  "쓰레쉬": {
+    "name": "쓰레쉬",
+    "cost": "3",
+    "synergies": [
+      "필연",
+      "거대 괴수"
+    ],
+    "imgpath": "/img/쓰레쉬.jpg"
+  },
+  "아리": {
+    "name": "아리",
+    "cost": "1",
+    "synergies": [
+      "필연",
+      "비전 마법사"
+    ],
+    "imgpath": "/img/아리.jpg"
+  },
+  "아무무": {
+    "name": "아무무",
+    "cost": "3",
+    "synergies": [
+      "도자기",
+      "파수꾼"
+    ],
+    "imgpath": "/img/아무무.jpg"
+  },
+  "아지르": {
+    "name": "아지르",
+    "cost": "5",
+    "synergies": [
+      "숲지기",
+      "기원자"
+    ],
+    "imgpath": "/img/아지르.jpg"
+  },
+  "아트록스": {
+    "name": "아트록스",
+    "cost": "2",
+    "synergies": [
+      "혼령",
+      "먹그림자",
+      "난동꾼"
+    ],
+    "imgpath": "/img/아트록스.jpg"
+  },
+  "아펠리오스": {
+    "name": "아펠리오스",
+    "cost": "3",
+    "synergies": [
+      "필연",
+      "저격수"
+    ],
+    "imgpath": "/img/아펠리오스.jpg"
+  },
+  "알룬": {
+    "name": "알룬",
+    "cost": "3",
+    "synergies": [
+      "암영",
+      "기원자"
+    ],
+    "imgpath": "/img/알룬.jpg"
+  },
+  "애니": {
+    "name": "애니",
+    "cost": "4",
+    "synergies": [
+      "행운",
+      "기원자"
+    ],
+    "imgpath": "/img/애니.jpg"
+  },
+  "애쉬": {
+    "name": "애쉬",
+    "cost": "4",
+    "synergies": [
+      "도자기",
+      "저격수"
+    ],
+    "imgpath": "/img/애쉬.jpg"
+  },
+  "야스오": {
+    "name": "야스오",
+    "cost": "1",
+    "synergies": [
+      "필연",
+      "결투가"
+    ],
+    "imgpath": "/img/야스오.jpg"
+  },
+  "오공": {
+    "name": "오공",
+    "cost": "5",
+    "synergies": [
+      "천계",
+      "호걸",
+      "현자"
+    ],
+    "imgpath": "/img/오공.jpg"
+  },
+  "오른": {
+    "name": "오른",
+    "cost": "4",
+    "synergies": [
+      "숲지기",
+      "거대 괴수"
+    ],
+    "imgpath": "/img/오른.jpg"
+  },
+  "요네": {
+    "name": "요네",
+    "cost": "3",
+    "synergies": [
+      "암영",
+      "사신"
+    ],
+    "imgpath": "/img/요네.jpg"
+  },
+  "요릭": {
+    "name": "요릭",
+    "cost": "2",
+    "synergies": [
+      "암영",
+      "거대 괴수"
+    ],
+    "imgpath": "/img/요릭.jpg"
+  },
+  "우디르": {
+    "name": "우디르",
+    "cost": "5",
+    "synergies": [
+      "먹그림자",
+      "거대 괴수",
+      "정령 주술사"
+    ],
+    "imgpath": "/img/우디르.jpg"
+  },
+  "이렐리아": {
+    "name": "이렐리아",
+    "cost": "5",
+    "synergies": [
+      "이야기꾼",
+      "결투가"
+    ],
+    "imgpath": "/img/이렐리아.jpg"
+  },
+  "일라오이": {
+    "name": "일라오이",
+    "cost": "3",
+    "synergies": [
+      "혼령",
+      "비전 마법사",
+      "파수꾼"
+    ],
+    "imgpath": "/img/일라오이.jpg"
+  },
+  "자야": {
+    "name": "자야",
+    "cost": "5",
+    "synergies": [
+      "용군주",
+      "연인",
+      "재주꾼"
+    ],
+    "imgpath": "/img/자야.jpg"
+  },
+  "자이라": {
+    "name": "자이라",
+    "cost": "2",
+    "synergies": [
+      "이야기꾼",
+      "현자"
+    ],
+    "imgpath": "/img/자이라.jpg"
+  },
+  "잔나": {
+    "name": "잔나",
+    "cost": "2",
+    "synergies": [
+      "용군주",
+      "기원자"
+    ],
+    "imgpath": "/img/잔나.jpg"
+  },
+  "잭스": {
+    "name": "잭스",
+    "cost": "1",
+    "synergies": [
+      "먹그림자",
+      "파수꾼"
+    ],
+    "imgpath": "/img/잭스.jpg"
+  },
+  "조이": {
+    "name": "조이",
+    "cost": "3",
+    "synergies": [
+      "행운",
+      "이야기꾼",
+      "비전 마법사"
+    ],
+    "imgpath": "/img/조이.jpg"
+  },
+  "초가스": {
+    "name": "초가스",
+    "cost": "1",
+    "synergies": [
+      "신화",
+      "거대 괴수"
+    ],
+    "imgpath": "/img/초가스.jpg"
+  },
+  "카이사": {
+    "name": "카이사",
+    "cost": "4",
+    "synergies": [
+      "먹그림자",
+      "재주꾼"
+    ],
+    "imgpath": "/img/카이사.jpg"
+  },
+  "카직스": {
+    "name": "카직스",
+    "cost": "1",
+    "synergies": [
+      "천계",
+      "사신"
+    ],
+    "imgpath": "/img/카직스.jpg"
+  },
+  "케이틀린": {
+    "name": "케이틀린",
+    "cost": "1",
+    "synergies": [
+      "혼령",
+      "저격수"
+    ],
+    "imgpath": "/img/케이틀린.jpg"
+  },
+  "케인": {
+    "name": "케인",
+    "cost": "4",
+    "synergies": [
+      "혼령",
+      "사신"
+    ],
+    "imgpath": "/img/케인.jpg"
+  },
+  "코그모": {
+    "name": "코그모",
+    "cost": "1",
+    "synergies": [
+      "신화",
+      "기원자",
+      "저격수"
+    ],
+    "imgpath": "/img/코그모.jpg"
+  },
+  "코부코": {
+    "name": "코부코",
+    "cost": "1",
+    "synergies": [
+      "행운",
+      "난동꾼"
+    ],
+    "imgpath": "/img/코부코.jpg"
+  },
+  "키아나": {
+    "name": "키아나",
+    "cost": "2",
+    "synergies": [
+      "천계",
+      "결투가"
+    ],
+    "imgpath": "/img/키아나.jpg"
+  },
+  "킨드레드": {
+    "name": "킨드레드",
+    "cost": "2",
+    "synergies": [
+      "숲지기",
+      "필연",
+      "사신"
+    ],
+    "imgpath": "/img/킨드레드.jpg"
+  },
+  "탐 켄치": {
+    "name": "탐 켄치",
+    "cost": "3",
+    "synergies": [
+      "신화",
+      "난동꾼"
+    ],
+    "imgpath": "/img/탐 켄치.jpg"
+  },
+  "트리스타나": {
+    "name": "트리스타나",
+    "cost": "3",
+    "synergies": [
+      "행운",
+      "결투가"
+    ],
+    "imgpath": "/img/트리스타나.jpg"
+  },
+  "티모": {
+    "name": "티모",
+    "cost": "2",
+    "synergies": [
+      "행운",
+      "재주꾼"
+    ],
+    "imgpath": "/img/티모.jpg"
+  },
+  "흐웨이": {
+    "name": "흐웨이",
+    "cost": "5",
+    "synergies": [
+      "신화",
+      "예술가"
+    ],
+    "imgpath": "/img/흐웨이.jpg"
+  }
 }
