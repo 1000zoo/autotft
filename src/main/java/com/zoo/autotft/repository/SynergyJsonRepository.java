@@ -18,7 +18,7 @@ import java.util.Map;
 
 public class SynergyJsonRepository implements JsonRepository<Synergy> {
 
-    private final static String SEASON = "season10";
+    private final static String SEASON = "season11";
 
     private final static String CLASS_PATH = "src/main/resources/json/" + SEASON + "/class_data.json";
     private final static String ORIGIN_PATH = "src/main/resources/json/" + SEASON + "/origin_data.json";

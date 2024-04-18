@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class ChampionJsonRepository implements JsonRepository<Champion> {
     private final static ObjectMapper mapper = new ObjectMapper();
-    private final static String CHAMPION_PATH = "src/main/resources/json/season10/champion_data.json";
+    private final static String CHAMPION_PATH = "src/main/resources/json/season11/champion_data.json";
 
     private final Map<String, Champion> repository;
     private final Map<String, List<String>> synergiesNameMap;
