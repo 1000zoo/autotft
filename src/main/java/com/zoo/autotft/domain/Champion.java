@@ -35,6 +35,10 @@ public final class Champion implements Comparable<Champion> {
         return synergies.stream().map(ChampionSynergy::synergy).toList();
     }
 
+    public boolean isUniqueChampion() {
+        return synergies.stream().anyMatch(ChampionSynergy::isUnique);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {

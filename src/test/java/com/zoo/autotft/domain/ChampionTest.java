@@ -8,6 +8,7 @@ import com.zoo.autotft.domain.synergy.ChampionSynergy;
 import com.zoo.autotft.domain.synergy.Class;
 import com.zoo.autotft.domain.synergy.Origin;
 import com.zoo.autotft.domain.synergy.Synergy;
+import com.zoo.autotft.domain.synergy.Unique;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
@@ -86,5 +87,19 @@ class ChampionTest {
 
         // then
         assertThat(size).isEqualTo(1);
+    }
+
+    @Test
+    @DisplayName("isUnique 테스트")
+    void isUniqueChampionTest() {
+        // given
+        Champion champion = new Champion("자야", 5);
+        Synergy uniqueSynergy = new Unique("연인", empty);
+        champion.setSynergies(List.of(new ChampionSynergy(champion, uniqueSynergy)));
+        // when
+        boolean result = champion.isUniqueChampion();
+
+        // then
+        assertThat(result).isEqualTo(true);
     }
 }

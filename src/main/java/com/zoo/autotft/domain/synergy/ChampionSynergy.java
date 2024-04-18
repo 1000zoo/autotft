@@ -7,4 +7,8 @@ public record ChampionSynergy(Champion champion, Synergy synergy) {
     public boolean hasSameSynergy(Synergy synergy) {
         return synergy.equals(this.synergy);
     }
+
+    public boolean isUnique() {
+        return synergy.isUnique();
+    }
 }
