@@ -48,6 +48,10 @@ public class SynergyStatus {
         return true;
     }
 
+    public boolean contains(Synergy synergy) {
+        return status.containsKey(synergy);
+    }
+
     public int size() {
         return status.values().stream().reduce(Integer::sum).orElseThrow();
     }

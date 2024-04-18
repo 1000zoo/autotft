@@ -5,6 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import com.zoo.autotft.domain.synergy.Synergy;
 import com.zoo.autotft.repository.JsonRepositoryController;
 import com.zoo.autotft.repository.Repository;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import org.junit.jupiter.api.BeforeEach;
@@ -89,6 +90,23 @@ class DeckTest {
 
         // then
         System.out.println(allPossibleChampions);
+
+    }
+
+    @Test
+    @DisplayName("같은 유니크 시너지를 가진 챔피언이 있는지 확인하는 메서드 테스트")
+    void containsSameUniqueChampionsTest() {
+        // given
+        int level = 1;
+        List<Champion> champions = championOf(List.of("자야"));
+        Deck deck = new Deck(level, champions, new ArrayList<>());
+        Champion champion = championRepository.findByName("라칸");
+
+        // when
+        boolean result = deck.containsSameUniqueChampions(champion);
+
+        // then
+        assertThat(result).isEqualTo(true);
 
     }
 

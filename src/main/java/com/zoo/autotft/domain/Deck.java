@@ -66,6 +66,14 @@ public class Deck {
         return champions.contains(champion);
     }
 
+    public boolean containsSameUniqueChampions(Champion champion) {
+        Synergy synergy = champion.getUniqueSynergyOrNull();
+        if (synergy == null) {
+            return false;
+        }
+        return status.contains(synergy);
+    }
+
     public List<Champion> getAllPossibleChampions() {
         return status.getAllPossibleChampions(new HashSet<>(champions));
     }
