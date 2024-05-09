@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>시즌 선택</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        text-align: center;
+    }
+    .season-button {
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        padding: 10px 20px;
+        display: block;
+        width: 200px;
+        margin: 10px 0;
+        cursor: pointer;
+        text-decoration: none; /* 링크 밑줄 제거 */
+        color: black; /* 버튼 텍스트 색상 */
+    }
+    .season-button:hover {
+        background-color: #ddd;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <a th:href="@{/season10}" class="season-button">Season 10</a>
+    <a th:href="@{/season11}" class="season-button">Season 11</a>
+</div>
+</body>
+</html>
